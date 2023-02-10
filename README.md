@@ -3,7 +3,8 @@
 ## setup
 
 1. Any program for building a web server will do, I personally used *XAMPP*.
-2. DBMS *MySQL*, the necessary tables do not need to be pre-created.
+2. DBMS *MySQL*, the necessary tables do not need to be pre-created. 
+Database data is indicated, suddenly, in *database.php*
 3. You will need to register at *localhost/register.php*
 
 ## points of interest
