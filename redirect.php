@@ -11,13 +11,13 @@ $db = new Database();
 $shortener = new LinkShortener($db);
 
 
-// Retrieve the short URL from the URL
+// // Получить короткий URL-адрес
 $short_url = $_GET['short_url'];
 
-// Retrieve the long URL associated with the short URL
+// Получить длинный URL-адрес, связанный с коротким URL-адресом
 $long_url = $shortener -> get_long_url($short_url);
 
 $shortener -> add_click($short_url);
-// Redirect the user to the long URL
+// Переадресация юзера на длинную ссылку
 header("Location: $long_url");
 ?>
